@@ -31,6 +31,7 @@
     
 }
 - (IBAction)hide:(id)sender {
+    [GYStatusBarHUD hide];
 }
 
 - (IBAction)loading:(id)sender {
@@ -43,6 +44,7 @@
 }
 
 - (IBAction)success:(id)sender {
+    [GYStatusBarHUD showMessage:@"文字提示"];
      [GYStatusBarHUD showSuccess:@"加载成功!"];
     
 }
